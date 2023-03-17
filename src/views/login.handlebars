@@ -1,0 +1,27 @@
+<div class=" login__form__container container w-50">
+    <div class="row text-center"> 
+        <h1 style="font-family: Bebas Neue;">Formulario Login</h1>
+        {{#if error}}
+            <p class="text-danger">{{error}}</p>
+        {{/if}}
+        <div class="container-lg">
+            <form class="d-flex flex-column justify-content-center align-items-center" action="/api/auth/login" method="post">
+            <label style="font-family: Bebas Neue;" for="">Nombre: </label>
+            <input class="text-center form-control my-2" type="text" placeholder="Ingresa tu nombre" name="name"/>
+            <label for="">Apellido: </label>
+            <input class="text-center form-control my-2" type="text" placeholder="Ingresa tu apellido" name="lastname"/>
+            <label for="">Email: </label>
+            <input class="text-center form-control my-2" type="email" placeholder="Ingresa tu email" name="email">
+            <label for="">Instagram: </label>
+            <input class="text-center form-control my-2" type="text" placeholder="@activaaaaaaaaa.studio" name="instagram"/>
+            <label for="">Domicilio: </label>
+            <input class="text-center form-control my-2" type="text" placeholder="Ingresa tu domicilio" name="address"/>
+            <label for="">Edad </label>
+            <input class="text-center form-control my-2" type="text" placeholder="Ingresa tu edad" name="age"/>
+            <button class=" mt-5 mb-5 btn btn-dark" type="submit">Iniciar Sesion</button>
+        </form>
+        </div>
+        
+    </div>
+</div>
+

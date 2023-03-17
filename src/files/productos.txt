@@ -1,0 +1,14 @@
+[
+    {
+        "id":1,
+        "title":"Camisa",
+        "price": 87,
+        "thumbnail":"https://tse3.mm.bing.net/th?id=OIP.VgHiLdCwewRpbLnaSh1KCwHaHa&pid=Api&P=0"
+    },
+    {
+        "id":3,
+        "title":"Maleta",
+        "price": 300,
+        "thumbnail":"https://tse1.mm.bing.net/th?id=OIP.HdMlQpcCffM1frlA8H_zUAHaHa&pid=Api&P=0"
+    }
+]

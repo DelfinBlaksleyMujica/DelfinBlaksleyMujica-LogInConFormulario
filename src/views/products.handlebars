@@ -1,0 +1,33 @@
+<div class="m-5">
+    {{#if products}}
+    <div class="container">
+        <div class="d-flex justify-content-center align-content-center m-5">
+            <h2 class="text-dark" style="font-family: Bebas Neue;">Productos</h2>
+        </div>
+        
+    </div>
+    
+        <table class="table table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Titulo</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Imagen</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each products}}
+                <tr>
+                    <td>{{this.title}}</td>
+                    <td>{{this.price}}</td>
+                    <td><img width="70" src={{this.thumbnail}}/></td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+        {{else}}
+        <div>
+            <h1>No hay productos para mostrar</h1>
+        </div>
+        {{/if}}
+</div>
